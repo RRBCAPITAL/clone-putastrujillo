@@ -39,8 +39,8 @@ module.exports = {
         'p1': '0 0 8px rgba(130,0,250,1)',
       },
       backgroundColor: {
-        'back-red': '#FBFF39',
-        'back-red-l': '#ca1e25',
+        'back-red': '#000000',
+        'back-red-l': '#f0a939',
         'back-blue': '#def2fc', 
         'back-redd': '#ff3d64',
         // 'back-red': '#ff3d64',
@@ -52,16 +52,16 @@ module.exports = {
         'whitet': '#ffff'
       },
       borderColor: {
-        'bor-red': '#FBFF39',
-        'bor-red-l': '#ca1e25',
+        'bor-red': '#0000',
+        'bor-red-l': '#f0a939',
         // 'bor-red': '#ff3d64',
         // 'bor-red-l': '#fff2f7',
         'blackt': '#000000',
         'whitet': '#ffff'
       },
       textColor: {
-        't-red': '#FBFF39',
-        't-red-l': '#ca1e25',
+        't-red': '#0000',
+        't-red-l': '#f0a939',
         't-blue': '#def2fc',
         'blackt': '#000000',
         'whitet': '#ffff'

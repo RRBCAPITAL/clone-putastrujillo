@@ -165,7 +165,7 @@ const Filtros = ({
         animate={controls}
         transition={{ duration: 0.3, ease: "easeInOut" }}
         exit="hidden"
-        className="z-[999] flex flex-col p-4 text-white bg-back-red overflow-hidden w-[92%] lg:w-[72%] mx-auto rounded-[20px] mt-10"
+        className="z-[999] flex flex-col p-4 text-white bg-slate-700 overflow-hidden w-[92%] lg:w-[72%] mx-auto rounded-[20px] mt-10"
       >
         <div className="w-full h-[50px] mx-auto flex items-center justify-between">
           <div className="text-[1rem] font-bold">
