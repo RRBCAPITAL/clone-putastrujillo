@@ -18,8 +18,10 @@ import GoogleAnalytics from "./GoogleAnalytics";
 import { Quicksand } from "next/font/google";
 import { Poppins } from "next/font/google";
 
+import { DefaultSeo, NextSeo } from "next-seo";
+
 export const metadata = {
-  title: "Putas TrujilloKinesiólogas anfitrionas en Arequipa 🙈 I kinesvip ✅",
+  title: "Kinesiólogas anfitrionas en Arequipa 🙈 I kinesvip ✅",
   description:
     "Anuncios de kinesiólogas reales en el sur del Perú, kinesiólogas chibolas, kinesiólogas venezolanas, colombianas, en Arequipa, Cusco, Tacna, Apurimac, Madre de Dios, Ucayali, Junin, Ica y Moquegua",
   icons: {
@@ -49,6 +51,9 @@ const quicksand = Poppins({ subsets: ["latin"], weight: "400" });
 export default function RootLayout({ children }) {
   return (
     <>
+    <NextSeo  
+    canonical = "www.putasenarequipa.com/"  
+    />
       <ClerkProvider
         appearance={{
           layout: {
@@ -72,13 +77,6 @@ export default function RootLayout({ children }) {
       >
         <html lang="es" className={quicksand.className}>
           <body className="w-screen overflow-x-hidden">
-          <Head>
-        <link
-          rel="canonical"
-          href="https://putasenarequipa.com/"
-          key="canonical"
-        />
-      </Head>
             <GoogleAnalytics />
             <Suspense fallback={<Loading />}>
               <Access children={children} />
