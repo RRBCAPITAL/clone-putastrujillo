@@ -8,6 +8,13 @@ export const metadata = {
   description:
     "Registrate a KinesVIP y publica tu anuncio totalmente gratis.",
   referrer: 'origin-when-cross-origin',
+  metadataBase: new URL(
+    "https://putasenarequipa.com/sign-up" ||
+      "https://www.putasenarequipa.com/sign-up"
+  ),
+  alternates: {
+    canonical: "/",
+  },
   authors: [{ name: "RRB CAPITAL" }],
   publisher: 'RRB CAPITAL',
 };
