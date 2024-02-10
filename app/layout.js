@@ -72,29 +72,13 @@ export default function RootLayout({ children }) {
       >
         <html lang="es" className={quicksand.className}>
           <body className="w-screen overflow-x-hidden">
-            {/* <Head>
-        <link rel="icon" href="/assets/favicon.ico" type="image/x-icon" />
-
-        <meta property="og:title" content="PAPAYA HUB | " />
-        <meta property="og:description" content="Descripción de la página"/>
-        <meta property="og:image" content="URL de la imagen en miniatura" />
-
-        <meta name="description" content="La mejor plataforma de chicas para ti." />
-        <meta name="keywords" content="Anuncios de chicas, chicas, plataforma, diversión, Damas de compañía, Acompañantes, Citas personales,
-        Servicios de acompañamiento, Encuentros discretos, Compañía femenina, Citas privadas, Conocer chicas, Contactos personales, Citas casuales,
-        Anuncios de mujeres, Encuentros íntimos, Conocer gente nueva, Citas de adultos, Servicios de entretenimiento, Citas exclusivas,
-        Encuentros románticos, Amigas para salir, Citas en línea
-        " />
-
-        <meta name="author" content=""/>
-        <meta name="copyright" content="© 2023 Nombre de la empresa">RRB CAPITAL</meta>
-
+          <Head>
         <link
-          rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+          rel="canonical"
+          href="https://putasenarequipa.com/"
+          key="canonical"
         />
-        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-        </Head>       */}
+      </Head>
             <GoogleAnalytics />
             <Suspense fallback={<Loading />}>
               <Access children={children} />
