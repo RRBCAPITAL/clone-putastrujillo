@@ -1,17 +1,42 @@
-"use client"
+import Image from "next/image";
+import Link from "next/link";
+import Head from "next/head";
+import Inicio from "@/components/Inicio/Inicio";
+import { NextSeo } from "next-seo";
 
-import Image from 'next/image'
-import Link from 'next/link'
-import Head from 'next/head'
-import Inicio from '@/components/Inicio/Inicio'
+export const metadata = {
+  title: "Kinesiólogas anfitrionas en Arequipa 🙈 I kinesvip ✅",
+  description:
+    "Anuncios de kinesiólogas reales en el sur del Perú, kinesiólogas chibolas, kinesiólogas venezolanas, colombianas, en Arequipa, Cusco, Tacna, Apurimac, Madre de Dios, Ucayali, Junin, Ica y Moquegua",
+  icons: {
+    icon: ["/favicon_io/favicon.ico?v=4"],
+    apple: ["/favicon_io/apple-touch-icon.png?v=4"],
+    shortcut: ["/favicon_io/apple-touch-icon.png"],
+  },
+  keywords: [
+    "kinesiologas arequipa",
+    "kinesiologas en trujillo",
+    "kinesiologas arequipa los olivos",
+    "kines cusco teens",
+    "kinesiologas cusco y chiclayo",
+    "prostitutas lima",
+    "kines surco",
+    "caletas lima",
+    "putas peruanas",
+    "putas extranjeras",
+    "anfitrionas lima",
+    "kinesiologas tacna",
+    "kinesiologas venezolanas y colombianas",
+  ],
+};
 
 export default function Home() {
-  
   return (
     <>
-      <main className='dark:bg-dark-l bg-white flex'>
+      <NextSeo canonical="www.putasenarequipa.com/" />
+      <main className="dark:bg-dark-l bg-white flex">
         <Inicio />
       </main>
     </>
-  )
+  );
 }

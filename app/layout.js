@@ -18,42 +18,11 @@ import GoogleAnalytics from "./GoogleAnalytics";
 import { Quicksand } from "next/font/google";
 import { Poppins } from "next/font/google";
 
-import { DefaultSeo, NextSeo } from "next-seo";
-
-export const metadata = {
-  title: "Kinesiólogas anfitrionas en Arequipa 🙈 I kinesvip ✅",
-  description:
-    "Anuncios de kinesiólogas reales en el sur del Perú, kinesiólogas chibolas, kinesiólogas venezolanas, colombianas, en Arequipa, Cusco, Tacna, Apurimac, Madre de Dios, Ucayali, Junin, Ica y Moquegua",
-  icons: {
-    icon: ["/favicon_io/favicon.ico?v=4"],
-    apple: ["/favicon_io/apple-touch-icon.png?v=4"],
-    shortcut: ["/favicon_io/apple-touch-icon.png"],
-  },
-  keywords: [
-    "kinesiologas arequipa",
-    "kinesiologas en trujillo",
-    "kinesiologas arequipa los olivos",
-    "kines cusco teens",
-    "kinesiologas cusco y chiclayo",
-    "prostitutas lima",
-    "kines surco",
-    "caletas lima",
-    "putas peruanas",
-    "putas extranjeras",
-    "anfitrionas lima",
-    "kinesiologas tacna",
-    "kinesiologas venezolanas y colombianas",
-  ],
-};
-
 const quicksand = Poppins({ subsets: ["latin"], weight: "400" });
 
 export default function RootLayout({ children }) {
   return (
     <>
-    <NextSeo  
-    canonical = "www.putasenarequipa.com/"  
-    />
       <ClerkProvider
         appearance={{
           layout: {
