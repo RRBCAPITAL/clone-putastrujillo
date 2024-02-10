@@ -1109,7 +1109,7 @@ const CrearAnuncio = () => {
             </div> */}
 
               <atencion className="flex flex-col gap-[12px] w-[300px] sm:w-full mx-auto">
-                <containerhorarioatencion className="bg-[#fff176] dark:bg-[#2c2c2c] p-4 rounded-[10px] grid gap-2">
+                <containerhorarioatencion className="bg-back-red dark:bg-[#2c2c2c] p-4 rounded-[10px] grid gap-2">
                   <div className="flex flex-col gap-2">
                     <label
                       htmlFor="name"
@@ -1234,7 +1234,7 @@ const CrearAnuncio = () => {
                   <h1 className="dark:text-whitet text-blackt">
                     Horario de atención
                   </h1>
-                  <containerhorarioatencion className="bg-[#fff176] dark:bg-[#2c2c2c] p-4 rounded-[10px] grid gap-2">
+                  <containerhorarioatencion className="bg-back-red dark:bg-[#2c2c2c] p-4 rounded-[10px] grid gap-2">
                     <div className="flex flex-col gap-2">
                       <label
                         htmlFor="name"
@@ -1493,7 +1493,7 @@ const CrearAnuncio = () => {
                 <label htmlFor="name" className="dark:text-whitet text-blackt">
                   Selecciona los idiomas que domine:
                 </label>
-                <div className="bg-[#fff176] dark:bg-[#2c2c2c] p-4 rounded-[10px] flex gap-2 text-sm items-center justify-center dark:text-whitet text-blackt">
+                <div className="bg-back-red dark:bg-[#2c2c2c] p-4 rounded-[10px] flex gap-2 text-sm items-center justify-center dark:text-whitet text-blackt">
                   {idiomasPrincipales.map((i) => (
                     <div key={i} className="flex gap-2">
                       <label htmlFor={i}>{i}</label>
@@ -1678,7 +1678,7 @@ const CrearAnuncio = () => {
                       browse: "Seleccionar archivos",
                     },
                   }}
-                  className="flex gap-2 items-center justify-center p-2 bg-[#ffe676] border-2 rounded-[10px] text-black font-bold hover:bg-back-red transition-all ease-linear duration-300"
+                  className="flex gap-2 items-center justify-center p-2 bg-back-red border-2 rounded-[10px] text-white font-bold hover:bg-back-red transition-all ease-linear duration-300"
                   onUpload={(result) => {
                     // Extrae la URL segura de este objeto y guárdala en el array
                     if (result.info && result.info.secure_url) {
@@ -1696,7 +1696,7 @@ const CrearAnuncio = () => {
                   }}
                 >
                   <nav>Subir videos</nav>
-                  <FaUpload className="w-4 h-4 text-black" />
+                  <FaUpload className="w-4 h-4 text-white" />
                 </CldUploadButton>
                 <div className="flex flex-wrap gap-2">
                   {formContent &&
@@ -1788,7 +1788,7 @@ const CrearAnuncio = () => {
               </button>
               <button
                 type="submit"
-                className="bg-back-red-l shadow-p4 red p-4 rounded-[10px] text-t-red hover:bg-[#ff8c57] duration-200 ease-linear transition-all font-bold mb-10"
+                className="bg-back-red-l shadow-p4 red p-4 rounded-[10px] text-white hover:bg-[#ff8c57] duration-200 ease-linear transition-all font-bold mb-10"
               >
                 Crear Anuncio
               </button>

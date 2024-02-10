@@ -11,6 +11,7 @@ import { FaUserCheck } from "react-icons/fa";
 import { useUser, UserButton } from "@clerk/nextjs";
 import { MdNightlight } from "react-icons/md";
 import { MdOutlineLightMode } from "react-icons/md";
+import Image from "next/image";
 
 import { motion, useAnimation } from "framer-motion";
 import { changeIn } from "@/utils/motionTransitions";
@@ -165,7 +166,7 @@ const Filtros = ({
         animate={controls}
         transition={{ duration: 0.3, ease: "easeInOut" }}
         exit="hidden"
-        className="z-[999] flex flex-col p-4 text-white bg-slate-700 overflow-hidden w-[92%] lg:w-[72%] mx-auto rounded-[20px] mt-10"
+        className="z-[999] flex flex-col p-4 text-white bg-violet-900 overflow-hidden w-[92%] lg:w-[72%] mx-auto rounded-[20px] mt-10"
       >
         <div className="w-full h-[50px] mx-auto flex items-center justify-between">
           <div className="text-[1rem] font-bold">
@@ -177,7 +178,7 @@ const Filtros = ({
               }}
               className={`${chewy.className} font-extrabold text-4xl text-t-red-l p-2 rounded`}
             >
-              KINESIOLOGAS
+              <Image width={180} height={80} src={'/assets/kinesvip.png'} className=""/>
             </Link>
           </div>
 
