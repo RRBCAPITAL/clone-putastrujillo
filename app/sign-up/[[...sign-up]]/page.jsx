@@ -48,7 +48,7 @@ export default function Page() {
       <div className="z-10 mt-20 m-4 bg-[#0000003e] shadow-sm p-[2px] rounded-[20px] relative">
         
         <section className="m-4 p-4 rounded-[20px]">
-        <h1 className="mb-2 text-center text-white font-bold text-xl shadow-normal bg-[#103fef] rounded-[10px] w-[88%] p-2 mx-auto">Registrarse a Photokinnes</h1>
+        <h1 className="mb-2 text-center text-white font-bold text-xl shadow-normal bg-[#103fef] rounded-[10px] w-[88%] p-2 mx-auto">Registrarse a Kinesvip</h1>
           <div className="flex flex-col sm:flex-row gap-2">
             <SignUp />
           </div>

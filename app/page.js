@@ -28,12 +28,18 @@ export const metadata = {
     "kinesiologas tacna",
     "kinesiologas venezolanas y colombianas",
   ],
+  referrer: 'origin-when-cross-origin',
+  metadataBase: new URL('https://putasenarequipa.com/' || 'https://www.putasenarequipa.com/'),
+  alternates: {
+    canonical: "/",
+  },
+  authors: [{ name: "RRB CAPITAL" }],
+  publisher: 'RRB CAPITAL',
 };
 
 export default function Home() {
   return (
     <>
-      <NextSeo canonical="www.putasenarequipa.com/" />
       <main className="dark:bg-dark-l bg-white flex">
         <Inicio />
       </main>
